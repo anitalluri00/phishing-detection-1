@@ -35,4 +35,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 5000
 
 # Run with Gunicorn (as written in your text, which is safer than the scan's flask dev server)
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
